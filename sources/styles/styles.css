@@ -1,0 +1,530 @@
+/*Importaciones*/
+@import url('http://fonts.cdnfonts.com/css/keania-one');
+@import url('http://fonts.cdnfonts.com/css/k2d');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+/*root*/
+*{
+    margin:0;
+    padding: 0;
+
+}
+
+/*Etiquetas*/
+
+
+h1{
+    position: absolute;
+    font-family:'Keania One',sans-serif;
+    font-weight:400px;
+    font-size: 96px;
+    line-height: 117px;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    color: #2F3CB1;
+
+}
+h2{
+    position: absolute;
+    font-family:'K2D',sans-serif;
+    font-weight: 100%;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    color: #000000;
+    
+    
+}
+
+
+nav{
+    top:0;
+    margin: 0;
+    width: 100%;
+    height: 40px; 
+    padding: 10px 0px 10px 0px;
+    justify-content:space-between;
+    align-items: center;
+    background-color:#DADADA ;
+   
+}
+
+a:link{
+    color:#2F3CB1 ;
+    text-decoration: none;
+}
+
+table{
+    margin: auto;
+    padding-top: 5%;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    padding: 20px 0px 0px 0px;
+    
+    background-color: #DADADA;
+}
+
+
+
+/*Clases*/
+
+/*Encabezado, menu y pie de pagina general*/
+.encabezado{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+.encabezado__imagen{
+    width: 100%;
+    height: 400px;
+}
+
+.menu{
+    width:90%;
+    height: 100%;
+    display: inline-block;
+}
+
+
+.menu__paginas{
+    margin: 10px;
+    display: inline-block;
+    font-family: 'K2D',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2F3CB1;
+}
+
+.menu__iconos{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    
+    
+}
+.menu__iconos--modifier{
+    font-size: 28px;
+    color: #2F3CB1;
+    margin-right: 4px;
+}
+.menu__centrar{
+    width: auto;
+    height: auto;
+    margin-left: 0%;
+    font-size: 16px;
+
+}
+
+
+.pie__copyright{
+    width: 100%;
+    height:18px;
+    font-family: 'K2D',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: start;
+    color: #2F3CB1;
+}
+.pie__marca{
+    width: 100%;
+    height: 19px;
+    font-family: 'Keania One',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #2F3CB1;
+}
+.pie__descripcion{
+    width: 100%;
+    height: 16px;
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;   
+    color: #2F3CB1;
+}
+.pie__iconos{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    
+    
+}
+.pie__centrar{
+    margin-left: 0%;
+}
+
+
+/*Pagina Principal*/
+
+
+.resumen{
+    width: 45%;
+    height:520px;
+    vertical-align:middle;
+    display: inline-block;
+    overflow: auto;
+}
+
+.texto__resumen{
+    width: 515px;
+    height: 186px;
+    margin:23% 0% 0% 6%; 
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    font-family: 'K2D',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #2F3CB1;
+
+
+}
+.imagen__resumen{
+    width: 596px;
+    height: 459px;
+    margin:6% 0% 0% 10%;
+    border-radius: 10px;
+
+}
+
+.clientes{
+    width: 100%;
+    height: 800px;
+    margin-top: 200px;
+}
+
+.clientes__texto{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    margin-left: 40%;
+    font-family: 'K2D',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    color: #2F3CB1;
+}
+
+.clientes__img{
+    width: 255px;
+    height: 192px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
+
+/*Pagina Quienes Somos*/
+.QuienesSomos{
+    width: 45%;
+    height: 10%;
+    display: inline-block;
+    overflow:auto;
+
+}
+
+
+.QuienesSomos__titulo{
+   
+    margin: 0px 0px 0px 20px;
+    width: 515px;
+    height: 60px;
+    font-family: 'K2D',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 31px;
+    color: #2F3CB1;
+}
+
+.QuienesSomos__parrafo{
+    
+    margin: 30px 20px 10px 20px;
+    width: 540px;
+    height: 104px;
+    font-family: 'K2D',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2F3CB1;
+
+}
+
+.QuienesSomos__parrafo--modifier{
+    font-family: 'Keania One',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.QuienesSomos__imagen{
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    margin: 5% 0% 0% 20%;
+    border-radius: 9px;
+
+
+}
+
+/*Pagina Vision*/
+
+.Vision{
+    width: 48%;
+    height: 11%;
+    display: inline-block;
+    overflow:auto;
+
+}
+
+
+.Vision__titulo{
+   
+    margin: 0px 0px 0px 20px;
+    width: 560px;
+    height: 104px;
+    font-family: 'K2D',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 31px;
+    color: #2F3CB1;
+}
+
+.Vision__parrafo{
+    
+    margin: 0px 0px 0px 20px;
+    width: 560px;
+    height: 130px;
+    font-family: 'K2D',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2F3CB1;
+
+}
+.Vision__parrafo--large{
+    margin: 0px 0px 0px 20px;
+    width: 560px;
+    height: 160px;
+    font-family: 'K2D',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2F3CB1;
+
+}
+
+.Vision__parrafo--modifier{
+    font-family: 'Keania One',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.Vision__imagen{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin: 5% 0% 0% 20%;
+    border-radius: 9px;
+}
+
+/*Pagina Servicios*/
+
+.Servicios{
+    margin-left: 0%;
+    width: 44%;
+    height: 550px;
+    display: inline-block;
+    overflow: auto;
+}
+
+.Servicios__titulo{
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: 'K2D',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #2F3CB1;
+}
+.Servicios__lista{
+    width: auto;
+    height: auto;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2F3CB1;
+
+}
+
+.Servicios--modifier{
+    border-left: solid 2px black;
+}
+
+/*Pagina Proyectos*/
+
+.Proyectos{
+    width: 30%;
+    height: 550px;
+    display: inline-block;
+    overflow: auto;
+
+}
+
+.Proyectos__titulo{
+    width:85%;
+    height:35%;
+    margin-left: 5%;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    font-family: 'K2D',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #2F3CB1;
+}
+.Proyectos__parrafo{
+    width: 395px;
+    height: 30%;
+    margin-left: 8%;
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2F3CB1;
+}
+.Proyectos--modifier{
+    border-left: solid 2px black;
+}
+
+/*Pagina Contacto*/
+
+.Contacto{
+    width: 45%;
+    height: 450px;
+    margin-top: 2%;
+    margin-left: 35px;
+    display: inline-block;
+    overflow: auto;
+}
+
+.Contacto--modifier{
+    border-left: solid 2px black;
+}
+
+.Contacto__titulo{
+    width: 330px;
+    height: 42px;
+    font-family: 'K2D',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    color: #2F3CB1;
+}
+
+.Contacto__parrafo{
+    width: 677px;
+    height: 120px;
+    font-family: 'K2D',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2F3CB1;
+
+}
+
+.Contacto__telefono{
+    font-family: 'K2D',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    color: #2F3CB1;
+
+}
+
+.Contacto__formulario{
+    width: 80%;
+    height: 350px;
+    border: none;
+    margin-left: 50px;
+}
+
+.Contacto__formulario--texto{
+    width: 84px;
+    height: 26px;
+    margin-bottom: 55%;
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #2F3CB1;
+}
+
+.Contacto__formulario--respuesta{
+    width: 200px;
+    height: 29px;
+    margin-bottom: 5%;
+    background: #D9D9D9;
+    border: 1px solid #000000;
+}
+
+.Contacto__boton{
+    width: 168px;
+    height: 49px;
+    margin-top:30px;
+    font-family: 'K2D',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    border-radius: 9px;
+    background: #2F3CB1;
+    color: white;
+}
+
