@@ -49,13 +49,11 @@ h2{
 
 
 nav{
-    top:0;
-    margin: 0;
     width: 100%;
     height: 40px; 
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0px 0px 0px;
+    display: flex;
     justify-content:space-between;
-    align-items: center;
     background-color:#DADADA ;
    
 }
@@ -114,15 +112,10 @@ footer{
 }
 
 .menu{
-    width:90%;
-    height: 100%;
-    display: inline-block;
-}
-
-
-.menu__paginas{
+    width:auto;
+    height: auto;
+    display: inline;
     margin: 10px;
-    display: inline-block;
     font-family: 'K2D',sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -134,22 +127,15 @@ footer{
 .menu__iconos{
     width: auto;
     height: auto;
-    display: inline-block;
-    
-    
+    display: inline;  
+    margin: 3px;  
 }
 .menu__iconos--modifier{
     font-size: 28px;
     color: #2F3CB1;
     margin-right: 4px;
 }
-.menu__centrar{
-    width: auto;
-    height: auto;
-    margin-left: 0%;
-    font-size: 16px;
 
-}
 
 
 .pie__copyright{
