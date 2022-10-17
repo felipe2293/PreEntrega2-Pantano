@@ -31,7 +31,30 @@
 #copyright_footer{
     grid-area:copyright_footer;
 }
-
+#resumen{
+    grid-area: resumen;
+}
+#foto_resumen{
+    grid-area: foto_resumen;
+}
+#cliente_1{
+    grid-area:cliente_1;
+}
+#cliente_2{
+    grid-area:cliente_2;
+}
+#cliente_3{
+    grid-area:cliente_3;
+}
+#cliente_4{
+    grid-area:cliente_4;
+}
+#cliente_5{
+    grid-area:cliente_5;
+}
+#cliente_6{
+    grid-area: cliente_6;
+}
 /*Etiquetas*/
 h1{
     position: relative;
@@ -81,7 +104,7 @@ table{
 }
 
 footer{
-    width: 100%;
+    width: auto;
     height: 80px;
     padding: 5px;
     background-color: #DADADA;
@@ -204,17 +227,22 @@ footer{
 
 
 .resumen{
-    width: 45%;
+    width: auto;
     height:520px;
-    vertical-align:middle;
-    display: inline-block;
-    overflow: auto;
+    display: grid;
+    align-items: center;
+    margin-top: 30px;
+    grid-template-areas: 
+    "resumen foto_resumen ";
+    grid-template-columns:1.5fr 2fr;
+    grid-template-rows:1fr;
+    justify-items: center;
 }
 
 .texto__resumen{
     width: 515px;
     height: 186px;
-    margin:23% 0% 0% 6%; 
+    justify-self: center;
     border-top: solid 2px black;
     border-bottom: solid 2px black;
     font-family: 'K2D',sans-serif;
@@ -229,38 +257,49 @@ footer{
 .imagen__resumen{
     width: 596px;
     height: 459px;
-    margin:6% 0% 0% 10%;
-    border-radius: 10px;
+    border-radius:10px;
+    justify-self: center;
 
 }
 
 .clientes{
-    width: 100%;
-    height: 800px;
-    margin-top: 200px;
+    width: auto;
+    height: 600px;
+    margin-top: 100px;
+    align-items: center;
+
 }
 
 .clientes__texto{
-    position: absolute;
-    width: fit-content;
-    height: fit-content;
-    align-items: center;
-    margin-left: 40%;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
     font-family: 'K2D',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 31px;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
     color: #2F3CB1;
 }
-
+.clientes__grid{
+    display: grid;
+    grid-template-areas: 
+    ". cliente_1 cliente_2 cliente_3 ."
+    ". cliente_4 cliente_5 cliente_6 .";
+    grid-template-columns:0.5fr 0.7fr 0.7fr 0.7fr 0.5fr;
+    grid-template-rows:1fr 1fr;
+    justify-items: center;
+    margin-top: 20px;
+}
 .clientes__img{
     width: 255px;
     height: 192px;
-    margin: 20px;
+    justify-self: center;
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 

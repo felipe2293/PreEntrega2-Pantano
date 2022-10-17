@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="./sources/styles/styles.css">
 </head>
 <body>
+
     <header>
         <div class="encabezado">
             <h1 class="encabezado--modifier" id="titulo">PANTAUTOMATION</h1>
             <h2 class="encabezado--modifier" id="subtitulo">Dedicada a la automatizacion Industrial y Hogareña</h2>
         </div>
     </header>
+
     <nav>
         <div>
             <ul>
@@ -35,37 +37,23 @@
     </nav>
 
     <main>
-        <section >
-            <div class="resumen" >
-                <p class="texto__resumen" >Somos un proveedor de servicios dedicados al área de la automatización y control. Nos enfocamos no solo a brindar soluciones a grandes o pequeñas empresas, sino tambien a clientes que deseen automatizar o controlar su hogar.</p>
-            </div>
-            <div class="resumen">
-                <img class="imagen__resumen" src="./Sources/img/main.jpg" alt=""> 
-            </div>
-            
-        </section>
-
-        <section class="clientes">
+        <div class="resumen" >
+            <p class="texto__resumen" id="resumen">Somos un proveedor de servicios dedicados al área de la automatización y control. Nos enfocamos no solo a brindar soluciones a grandes o pequeñas empresas, sino tambien a clientes que deseen automatizar o controlar su hogar.</p>   
+            <img class="imagen__resumen" src="./Sources/img/main.jpg" alt="foto de inicio" id="foto_Resumen"> 
+        </div>      
+        <div class="clientes">
             <p class="clientes__texto">Nuestros clientes destacados</p>
-            <table>
-                <tr>
-                    <td ><img  src="./sources/img/logo_1.jpg" alt="" class="clientes__img"></td>
-                    <td><img src="./sources/img/logo_2.jpg" alt="" class="clientes__img"></td>
-                    <td><img src="./sources/img/logo_3.jpg" alt="" class="clientes__img"></td>
-                </tr>
-                <tr>
-                    <td><img src="./sources/img/logo_4.jpg" alt="" class="clientes__img"></td>
-                    <td><img src="./sources/img/logo_5.jpg" alt="" class="clientes__img"></td>
-                    <td><img src="./sources/img/logo_6.jpg" alt="" class="clientes__img"></td>
-                </tr>
-            </table>
-        </section>
-
-        
-
-
-       
+            <div class="clientes__grid">
+                <img src="./sources/img/logo_1.jpg" alt="cliente 1" class="clientes__img" id="cliente_1">
+                <img src="./sources/img/logo_2.jpg" alt="cliente 2" class="clientes__img" id="cliente_2">
+                <img src="./sources/img/logo_3.jpg" alt="cliente 3" class="clientes__img" id="cliente_3">
+                <img src="./sources/img/logo_4.jpg" alt="cliente 4" class="clientes__img" id="cliente_4">
+                <img src="./sources/img/logo_5.jpg" alt="cliente 5" class="clientes__img" id="cliente_5">
+                <img src="./sources/img/logo_6.jpg" alt="cliente 6" class="clientes__img" id="cliente_6">
+            </div>
+        </div>
     </main>
+
     <footer>
             <p class="pie__marca" id="titulo_footer">PANTAUTOMATION</p>
             <P class="pie__descripcion" id="subtitulo_footer">Automatizacion Industrial y Hogareña</P>   
@@ -79,5 +67,6 @@
         </div>
             <p class="pie__copyright" id="copyright_footer">Copyright © 2022 Pantautomation</p>
     </footer>
+
 </body>
 </html>
