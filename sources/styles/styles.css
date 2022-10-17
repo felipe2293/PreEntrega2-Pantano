@@ -134,7 +134,7 @@ footer{
     grid-template-rows:1fr 1fr;
     
 }
-/*Se utiliza una transition para poder darle opacidad a la imagen sin que afecte al texto*/
+/*opacidad a la imagen sin que afecte al texto*/
 .encabezado::before{
     content: "";
     background-image:url(../../sources/img/header.jpg);
@@ -162,8 +162,17 @@ footer{
     font-size: 20px;
     line-height: 26px;
     color: #2F3CB1;
-}
+    transition:background 1s;
 
+}
+/*transformacion al pasar mouse por menu*/
+.menu:hover{
+    background: #2F3CB1;
+    border-radius: 5px;
+}
+.menu,a:hover{
+    color: white;
+}
 .menu__iconos{
     width: auto;
     height: auto;
@@ -174,6 +183,30 @@ footer{
     font-size: 28px;
     color: #2F3CB1;
     margin-right: 4px;
+}
+
+.menu__iconos--modifier:hover{
+    animation: mover 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mover{
+    0%{
+        transform: translate(0px,1px) rotate(0deg);
+    }
+    25%{
+        transform: translate(0px,2px) rotate(1deg);
+    }
+    50%{
+        transform: translate(0px,3px) rotate(2deg);
+    }
+    75%{
+        transform: translate(0px,2px) rotate(1deg);
+    }
+    100%{
+        transform: translate(0px,1px) rotate(0deg);
+    }
+
 }
 
 
@@ -218,6 +251,12 @@ footer{
     display: inline-block;
     margin-top: 3px;
 }
+.pie__iconos:hover{
+    animation: mover 0.3s;
+    animation-iteration-count: infinite;
+}
+
+
 .pie__centrar{
     margin-left: 0%;
 }
