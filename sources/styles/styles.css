@@ -55,6 +55,16 @@
 #cliente_6{
     grid-area: cliente_6;
 }
+#QuienesSomos_titulo{
+    grid-area:QuienesSomos_titulo;
+}
+#QuienesSomos_parrafo{
+    grid-area:QuienesSomos_parrafo;
+}
+
+#QuienesSomos_imagen{
+    grid-area: QuienesSomos_imagen;
+}
 /*Etiquetas*/
 h1{
     position: relative;
@@ -326,18 +336,20 @@ footer{
 
 /*Pagina Quienes Somos*/
 .QuienesSomos{
-    width: 45%;
-    height: 10%;
-    display: inline-block;
-    overflow:auto;
-
+    width: auto;
+    height: 600px;
+    display: grid;
+    grid-template-areas: 
+                "QuienesSomos_titulo QuienesSomos_imagen"
+                "QuienesSomos_parrafo QuienesSomos_imagen";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    
 }
 
-
 .QuienesSomos__titulo{
-   
-    margin: 0px 0px 0px 20px;
-    width: 515px;
+    margin: 40px 0px 0px 20px;
+    width:80%;
     height: 60px;
     font-family: 'K2D',sans-serif;
     font-style: normal;
@@ -345,27 +357,27 @@ footer{
     font-size: 32px;
     line-height: 31px;
     color: #2F3CB1;
+    justify-items: center;
 }
 
 .QuienesSomos__parrafo{
-    
-    margin: 30px 20px 10px 20px;
-    width: 540px;
-    height: 104px;
+    width:90%;
+    margin: 0px 0px 0px 20px;
     font-family: 'K2D',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
     color: #2F3CB1;
+    justify-items: center;
 
 }
 
 .QuienesSomos__parrafo--modifier{
     font-family: 'Keania One',sans-serif;
-    font-style: normal;
+    font-style: bold;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 24px;
 }
 
@@ -373,8 +385,8 @@ footer{
     display: inline-block;
     width: 400px;
     height: 500px;
-    margin: 5% 0% 0% 20%;
     border-radius: 9px;
+    margin-top: 40px;
 
 
 }
