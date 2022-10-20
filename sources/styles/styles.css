@@ -579,12 +579,10 @@ footer{
 /*Pagina Contacto*/
 
 .Contacto{
-    width: 45%;
-    height: 450px;
-    margin-top: 2%;
-    margin-left: 35px;
-    display: inline-block;
-    overflow: auto;
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .Contacto--modifier{
@@ -592,8 +590,9 @@ footer{
 }
 
 .Contacto__titulo{
-    width: 330px;
-    height: 42px;
+    width: auto;
+    height: auto;
+    text-align: left;
     font-family: 'K2D',sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -603,8 +602,9 @@ footer{
 }
 
 .Contacto__parrafo{
-    width: 677px;
-    height: 120px;
+    width: auto;
+    height: 50%;
+    text-align: left;
     font-family: 'K2D',sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -621,7 +621,9 @@ footer{
     font-size: 32px;
     line-height: 42px;
     color: #2F3CB1;
-
+}
+.Contacto__telefono--modifier{
+    font-size: 62px;
 }
 
 .Contacto__formulario{
