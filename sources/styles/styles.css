@@ -397,6 +397,8 @@ footer{
     width: auto;
     height: 600px;
     display: grid;
+    margin-top: 50px;
+    margin-bottom: 60px;
     grid-template-areas: 
                 "QuienesSomos_titulo QuienesSomos_imagen"
                 "QuienesSomos_parrafo QuienesSomos_imagen";
@@ -680,6 +682,16 @@ footer{
 }
 
 /*Media Query's*/
+@media (max-width:1200px){
+    .texto__resumen{
+        height: 130px;
+        font-size: 15px;
+    }
+    .imagen__resumen{
+        width: 360px;
+        height: 300px;
+    }
+}
 @media (max-width:900px){
     h1{   
         font-size: 60px;
@@ -731,6 +743,27 @@ footer{
         width: 496px;
         height: 359px;
     }
+
+    .QuienesSomos__titulo{
+        font-size: 23px;
+        padding-bottom: 10px;
+        height: 118px;
+    }
+    
+    .QuienesSomos__parrafo{
+        font-size: 15px;
+    }
+    
+    .QuienesSomos__parrafo--modifier{
+        font-size: 15px;
+    }
+    
+    .QuienesSomos__imagen{
+        width: 300px;
+        height: 400px;
+    
+    }
+
     .clientes__texto{
         width: 300px;
         font-size: 15px;
@@ -789,14 +822,109 @@ footer{
         font-size: 12px;
     }
     .imagen__resumen{
-        width: 496px;
+        width: 466px;
         height: 359px;
+    }
+
+
+    .clientes{
+       margin-top: 50px;
+    }
+    .clientes__texto{
+        font-size: 12px;
+    }
+    .QuienesSomos__titulo{
+        font-size: 18px;
+    }
+    
+    .QuienesSomos__parrafo{
+        font-size: 11px;
+    }
+    
+    .QuienesSomos__parrafo--modifier{
+        font-size: 15px;
+    }
+    
+    .QuienesSomos__imagen{
+        width: 250px;
+        height: 350px;
+    
+    }
+}
+
+@media (max-width:500px){
+    h1{   
+        font-size: 40px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    nav{
+        padding: 0;
+        height: 20px;
+    }
+
+
+    .menu{
+        font-size: 8px;
+    
+    }
+    .menu__iconos{
+        margin: 0px;
+    }
+    .menu__iconos--modifier{
+        font-size: 10px;
+        
+    }
+    .pie__copyright{
+        font-size: 8px;
+    }  
+     
+    
+    .resumen{
+        width: auto;
+        height:520px;
+        grid-template-areas: 
+        "resumen"
+        "foto_resumen ";
+        grid-template-columns:1fr;
+        grid-template-rows:1fr;
+        justify-items: center;
+    }
+    
+    .texto__resumen{
+        height: 100px;
+        width: 420px;
+        font-size: 11px;
+    }
+    .imagen__resumen{
+        width: 400px;
+        height: 300px;
     }
     .clientes{
        margin-top: 50px;
     }
     .clientes__texto{
         font-size: 12px;
+    }
+
+    .QuienesSomos__titulo{
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    
+    .QuienesSomos__parrafo{
+        font-size: 8px;
+    }
+    
+    .QuienesSomos__parrafo--modifier{
+        font-size: 8px;
+    }
+
+    .QuienesSomos__imagen{
+        width: 200px;
+        height: 250px;
+    
     }
 }
 @keyframes mover{
