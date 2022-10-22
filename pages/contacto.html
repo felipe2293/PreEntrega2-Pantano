@@ -44,7 +44,25 @@
                 <span class="Contacto__telefono"><br><span class="Contacto__telefono--modifier">☏</span>   +52 (0266) 7 123 456</span>
             </div>
             <div class="col">
-                columna
+                <form class="Contacto--modifier">
+                    <div class="mb-3">
+                      <label for="Nombre" class="form-label Contacto__formulario--texto">Nombre:</label>
+                      <input type="text" class="form-control Contacto__formulario--respuesta" id="Nombre" aria-describedby="nombre">
+                    </div>
+                    <div class="mb-3">
+                      <label for="Email" class="form-label Contacto__formulario--texto">Email:</label>
+                      <input type="text" class="form-control Contacto__formulario--respuesta" id="Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Asunto" class="form-label Contacto__formulario--texto">Asunto:</label>
+                        <input type="text" class="form-control Contacto__formulario--respuesta" id="Asunto">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Mensaje" class="form-label Contacto__formulario--texto">Mensaje:</label>
+                        <input type="text" class="form-control Contacto__formulario--respuesta" id="Mensaje">
+                    </div>
+                    <button type="submit" class="btn btn-primary Contacto__boton">Enviar</button>
+                  </form>
             </div>
 
         </div>

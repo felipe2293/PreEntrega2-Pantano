@@ -105,10 +105,29 @@
     grid-area: Proyectos_parrafo_3;
 }
 /*Etiquetas*/
+/*Elimino caracteristicas que agrega bootstrap*/
+p{
+    margin-bottom: 0rem;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+ol, ul {
+    padding-left: 0rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0rem;
+    font-weight: 0px;
+    line-height:0px;
+}
+/*Elimino caracteristicas que agrega bootstrap*/
+
 h1{
     position: relative;
     font-family:'Keania One',sans-serif;
-    font-weight:400px;
+    font-weight:400;
     font-size: 96px;
     text-align: center;
     margin-top: 90px;
@@ -587,6 +606,7 @@ footer{
 
 .Contacto--modifier{
     border-left: solid 2px black;
+    padding-left: 20px;
 }
 
 .Contacto__titulo{
@@ -626,17 +646,10 @@ footer{
     font-size: 62px;
 }
 
-.Contacto__formulario{
-    width: 80%;
-    height: 350px;
-    border: none;
-    margin-left: 50px;
-}
 
 .Contacto__formulario--texto{
-    width: 84px;
-    height: 26px;
-    margin-bottom: 55%;
+    width: auto;
+    height: auto;
     font-family: 'K2D';
     font-style: normal;
     font-weight: 400;
@@ -646,25 +659,24 @@ footer{
 }
 
 .Contacto__formulario--respuesta{
-    width: 200px;
-    height: 29px;
-    margin-bottom: 5%;
+    width: 400px;
+    height: auto;
     background: #D9D9D9;
     border: 1px solid #000000;
 }
 
 .Contacto__boton{
     width: 168px;
-    height: 49px;
-    margin-top:30px;
+    height: auto;
     font-family: 'K2D',sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 42px;
     border-radius: 9px;
     background: #2F3CB1;
     color: white;
+    text-align: center;
 }
 
 /*Media Query's*/
