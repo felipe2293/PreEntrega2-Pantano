@@ -833,23 +833,33 @@ footer{
     .clientes__texto{
         font-size: 12px;
     }
+    .QuienesSomos{
+        height: 800px;
+        display: grid;
+        grid-template-areas: 
+                    "QuienesSomos_titulo"
+                    "QuienesSomos_imagen"
+                    "QuienesSomos_parrafo";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 2fr 1fr;
+        justify-items: center;
+        
+    }
     .QuienesSomos__titulo{
-        font-size: 18px;
+        font-size: 25px;
+        text-align: center;
     }
     
     .QuienesSomos__parrafo{
-        font-size: 11px;
+        font-size: 15px;
     }
     
     .QuienesSomos__parrafo--modifier{
         font-size: 15px;
     }
     
-    .QuienesSomos__imagen{
-        width: 250px;
-        height: 350px;
-    
-    }
+
+
 }
 
 @media (max-width:500px){
@@ -909,21 +919,20 @@ footer{
     }
 
     .QuienesSomos__titulo{
-        margin-top: 5px;
-        font-size: 15px;
+        font-size: 20px;
     }
     
     .QuienesSomos__parrafo{
-        font-size: 8px;
+        font-size: 12px;
     }
     
     .QuienesSomos__parrafo--modifier{
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .QuienesSomos__imagen{
-        width: 200px;
-        height: 250px;
+        width: 250px;
+        height: 300px;
     
     }
 }
